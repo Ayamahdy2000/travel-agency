@@ -1,0 +1,19 @@
+{
+    "DateLabel": "تاريخ السفر",
+    "DateRequied": "يجب ادخال تاريخ السفر",
+    "PassengersLabel":"عدد الركاب",
+    "TripClassLabel":"فئة الرحلة",
+    "TripTypeLabel":"نوع الرحلة",
+    "Adults":"الكبار",
+    "Children":"أطفال",
+    "AdultsRequired":"يجب ادخال عدد الكبار",
+    "ChildrenRequired":"يجب ادخال عدد الاطفال",
+    "Economy":"اقتصادي",
+    "Business":"عمل",
+    "First":"اول",
+    "OneWay":"اتجاه واحد",
+    "RoundTrip":"جوله",
+    "Book":"احجز رحلتك",
+    "ReadMore" : "اقرأ المزيد",
+    "Blog":"مدونة"
+}

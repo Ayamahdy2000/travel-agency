@@ -1,0 +1,31 @@
+.multiselect {
+    text-align: #{$start};
+    direction: $direction;
+    margin-bottom: 24px;
+
+    .multiselect__tags {
+        padding: 12px;
+        font-family: $font-family;
+        text-align: #{$start};
+    }
+
+    .multiselect__option--highlight {
+        background-color: var(--sub-color);
+        color: var(--white);
+    }
+
+    .multiselect__select {
+        #{$start}: auto;
+        #{$end}: 0;
+        z-index: 1;
+        height: 100%;
+        display: flex;
+        align-items: center;
+
+        &::before {
+            top: unset !important;
+            margin: 0;
+        }
+
+    }
+}

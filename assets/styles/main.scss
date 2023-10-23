@@ -1,0 +1,23 @@
+/*Import mixins and variables*/
+@import "Abstract/_mixins.scss";
+@import "Abstract/_variables.scss";
+@import "./icomoon/style.scss";
+
+
+@import "./Abstract/general";
+
+//components
+
+@import "./components/multiselect";
+@import "./components/input";
+@import "./components/DatePicker";
+@import "../../components/genericCard/genericCard";
+
+@import "../../components/navbar/navabr";
+@import "../../components/bookSection/bookSection";
+@import "../../components/blog/blog";
+body{
+    width: 100%;
+    min-height: 100vh;
+    background-color: var(--black);
+}

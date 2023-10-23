@@ -1,0 +1,20 @@
+{
+    "DateLabel": "Date of Travel",
+    "DateRequied": "You must enter the travel date",
+    "PassengersLabel":"Number of Passengers",
+    "TripClassLabel":"Trip Class",
+    "TripTypeLabel":"Trip Type",
+    "Adults":"Adults",
+    "Children":"Children",
+    "AdultsRequired":"You must enter the number of adults",
+    "ChildrenRequired":"You must enter the number of children",
+    "Economy":"Economy",
+    "Business":"Business",
+    "First":"First",
+    "OneWay":"One-way",
+    "RoundTrip":"Round-trip",
+    "Book":"Book your trip",
+    "ReadMore" : "Read More",
+    "Blog":"Blog"
+
+}

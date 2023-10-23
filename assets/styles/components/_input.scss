@@ -1,0 +1,64 @@
+.generic-input {
+    width: 100%;
+    box-shadow: none !important;
+    outline: none !important;
+    padding: 12px;
+    @include font-size(20px,18px,18px,16px);
+    border:1px solid var(--gray);
+    border-radius: 6px;
+    margin-bottom: 24px;
+    &.generic-input--error{
+        border: 1px solid var(--error) !important;
+    }
+
+}
+.generic-label{
+    @include font-size(20px,18px,18px,16px);
+    margin-bottom: 8px;
+    font-family: $font-family;
+    span{
+        color: var(--error);
+    }
+}
+.generic-input-group{
+    display: flex;
+    margin-bottom: 24px;
+    .generic-input-group-text{
+        background: var(--gray);
+        font-family: $font-family;
+        color: var(--black);
+        padding: 0 12px;
+        @include font-size(18px,16px,16px,14px);
+        display: flex;
+        align-items: center;
+        border-top-#{$start}-radius: 6px;
+        border-bottom-#{$start}-radius: 6px;
+        border-top-#{$end}-radius: 0px;
+        border-bottom-#{$end}-radius: 0px;
+
+    }
+    .generic-input {
+        border-#{$start}: 0px;
+        border-#{$end}: 1px solid var(--gray);
+        border-top-#{$start}-radius: 0px;
+        border-bottom-#{$start}-radius: 0px;
+        border-top-#{$end}-radius: 6px;
+        border-bottom-#{$end}-radius: 6px;
+        margin-bottom: 0;
+    }
+}
+
+.form-check{
+    margin-bottom: 24px;
+    padding-#{$start}: 1.5em;
+    padding-#{$end}: 0;
+    .form-check-input{
+        margin-#{$start}:-1.5em ;
+        margin-#{$end}:0 ;
+        float: #{$start};
+    }
+    .form-check-label{
+        font-family: $font-family;
+        @include font-size(18px,16px,16px,14px);
+    }
+}

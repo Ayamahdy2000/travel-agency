@@ -1,0 +1,31 @@
+.vc-popover-content-wrapper {
+    transform: unset !important;
+    inset: unset !important;
+    font-family: $font-family;
+    direction: $direction;
+
+    .vc-popover-caret {
+        display: none;
+    }
+    .vc-next {
+        transform: rotate(0deg);
+    }
+
+    .vc-prev {
+        transform: rotate(0deg);
+    }
+   @if($direction == rtl){
+    .vc-next {
+        transform: rotate(180deg);
+    }
+
+    .vc-prev {
+        transform: rotate(-180deg);
+    }
+   }
+  
+}
+
+.date-picker {
+    margin-bottom: 24px;
+}

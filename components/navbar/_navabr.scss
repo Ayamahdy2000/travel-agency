@@ -1,0 +1,75 @@
+.layout-navbar{
+  background-color: #fff;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  
+  img{
+    height: 70px;
+    max-width: 100%;
+   
+  }
+  .multiselect {
+    height: 65px;
+    background: transparent;
+    height: max-content;
+    width: max-content;
+    margin-bottom: 0;
+ 
+    .multiselect__tags {
+       background: transparent;
+       border: none;
+       min-height: unset;
+       padding-#{$start}:0 ;
+       padding-#{$end}:40px;
+    }
+ 
+    .multiselect__single {
+       height: 38px;
+       display: flex;
+       align-items: center;
+       margin-bottom: 0;
+       min-height: unset;
+       background-color: transparent;
+       text-transform: uppercase;
+    }
+ 
+   
+ 
+    img {
+       height: 30px;
+       width: 30px;
+       margin: 0 12px;
+    }
+ 
+    .multiselect__option {
+       padding: 0;
+       height: max-content;
+       min-height: unset;
+ 
+    }
+ 
+    .multiselect__content-wrapper {
+       max-height: 240px !important;
+ 
+ 
+       .multiselect__element {
+          .multiselect__option--highlight {
+             background-color: var(--sub-color);
+ 
+             a {
+                color: var(--white);
+             }
+          }
+ 
+          a {
+             display: block;
+             color: var(--black);
+             direction: $direction;
+             width: 100%;
+             text-decoration: none;
+             text-transform: uppercase;
+          }
+       }
+    }
+ }
+}
