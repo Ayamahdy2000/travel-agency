@@ -12,6 +12,7 @@
   "devDependencies": {
     "@nuxt/devtools": "latest",
     "@nuxtjs/i18n": "^8.0.0-rc.5",
+    "netlify-cli": "^16.9.1",
     "nuxt": "^3.8.0",
     "sass": "^1.69.4",
     "vue": "^3.3.6",
