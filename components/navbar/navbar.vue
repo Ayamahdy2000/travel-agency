@@ -2,13 +2,13 @@
   <div class="layout-navbar">
     <div class="container">
       <div class="row align-items-center">
-        <div class="col-12 col-md-6">
+        <div class="col-6 col-md-6">
           <nuxt-link :to="localePath('/', $i18n.locale)">
             <img src="../../assets/images/logo.png" alt="" srcset="" />
           </nuxt-link>
         </div>
 
-        <div class="col-12 col-md-6 d-flex justify-content-end">
+        <div class="col-6 col-md-6 d-flex justify-content-end">
           <multiselect
             v-model="value"
             :options="options"
@@ -19,9 +19,16 @@
           >
             <template v-slot:singleLabel="props">
               <img
+                v-if="props.option.code == 'ar'"
                 class="option__image"
-                :src="`_nuxt/assets/images/${props.option.flag}.svg`"
-                :alt="props.option.flag"
+                src="../../assets/images/arFlag.svg"
+                :alt="props.option.label"
+              />
+              <img
+                v-else
+                class="option__image"
+                src="../../assets/images/enFlag.svg"
+                :alt="props.option.label"
               /><span class="option__desc"
                 ><span class="option__title">{{
                   props.option.label
@@ -31,9 +38,16 @@
             <template v-slot:option="props">
               <!-- <nuxt-link  :to="switchLocalePath( props.option.code  )"> -->
               <img
+                v-if="props.option.code == 'ar'"
                 class="option__image"
-                :src="`_nuxt/assets/images/${props.option.flag}.svg`"
-                :alt="props.option.flag"
+                src="../../assets/images/arFlag.svg"
+                :alt="props.option.label"
+              />
+              <img
+                v-else
+                class="option__image"
+                src="../../assets/images/enFlag.svg"
+                :alt="props.option.label"
               />
               <span class="option__desc"
                 ><span class="option__title">{{

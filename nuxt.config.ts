@@ -1,8 +1,4 @@
-const netilfyConfig = {
-  baseURL: '/',
-  buildAssetsDir: 'assets'
-}
-const config = process.env.NUXT_ENV == 'netilfy' ? netilfyConfig : {}
+
 export default defineNuxtConfig({
 
   devtools: { enabled: false },
@@ -14,7 +10,6 @@ export default defineNuxtConfig({
 
   ssr:false,
   app: {
-    ...config,
     head: {
       title: "Travel agency",
       charset: "utf-8",
@@ -39,7 +34,6 @@ export default defineNuxtConfig({
     ],
     defaultLocale: "ar",
   },
-  nitro:{
-    preset:"netlify"
-  }
+ 
+  
 });

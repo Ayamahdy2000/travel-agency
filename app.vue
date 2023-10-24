@@ -27,7 +27,6 @@ useSeoMeta({
   ogTitle: "Travel Agency",
   description: "You can book now your trip easily",
   ogDescription: "You can book now your trip easily",
-  ogImage: process.env?.NUXT_DOMAIN + "/favicon.ico",
   twitterCard: "summary_large_image",
 });
 </script>

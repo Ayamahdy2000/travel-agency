@@ -4,7 +4,7 @@
       <div class="col-lg-10 col-md-10 col-12">
         <form class="form">
           <h2 class="generic-title">{{ $t("Book") }}</h2>
-          <div class="row">
+          <div class="row  g-3 ">
             <div class="col-12">
               <label class="generic-label">
                 {{ $t("DateLabel") }} <span>*</span>
@@ -16,7 +16,7 @@
                   :locale="$i18n.locale"
                 >
                   <template #default="{ inputValue, inputEvents }">
-                    <div class="row">
+                    <div class="row  g-3">
                       <div class="col-12 col-lg-6">
                         <input
                           class="generic-input mb-0"
@@ -70,13 +70,15 @@
               <label class="generic-label"
                 >{{ $t("TripTypeLabel") }} <span>*</span></label
               >
+
               <div class="d-flex gap-2">
                 <div class="form-check">
                   <input
                     class="form-check-input"
                     type="radio"
                     v-model="state.form.tripType"
-                    value="1"
+                    value="one"
+                    name="tripType"
                     id="one"
                   />
                   <label class="form-check-label" for="one">
@@ -87,10 +89,10 @@
                   <input
                     class="form-check-input"
                     type="radio"
-                    value="2"
+                    value="round"
+                    name="tripType"
                     v-model="state.form.tripType"
                     id="Round"
-                    checked
                   />
                   <label class="form-check-label" for="Round">
                     {{ $t("RoundTrip") }}
@@ -102,8 +104,8 @@
               <label class="generic-label"
                 >{{ $t("PassengersLabel") }} <span>*</span></label
               >
-              <div class="row m-b-24">
-                <div class="col-12 col-md-6">
+              <div class="row m-b-24 g-3">
+                <div class="col-12 col-lg-6">
                   <div class="generic-input-group mb-0">
                     <span class="generic-input-group-text" id="basic-addon1">{{
                       $t("Adults")
@@ -122,7 +124,7 @@
                     {{ $t("AdultsRequired") }}
                   </div>
                 </div>
-                <div class="col-12 col-md-6">
+                <div class="col-12 col-lg-6">
                   <div class="generic-input-group mb-0">
                     <span class="generic-input-group-text" id="basic-addon1">{{
                       $t("Children")
@@ -190,7 +192,7 @@ export default {
     const state = reactive({
       form: {
         typeClass: null,
-        tripType: "1",
+        tripType: "one",
         range: {
           start: null,
           end: null,

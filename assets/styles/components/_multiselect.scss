@@ -2,6 +2,7 @@
     text-align: #{$start};
     direction: $direction;
     margin-bottom: 24px;
+    cursor: pointer;
 
     .multiselect__tags {
         padding: 12px;
